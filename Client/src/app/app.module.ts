@@ -16,7 +16,6 @@ import { FooterComponent } from './footer/footer.component';
 import { AdminHotelsComponent } from './admin/admin-hotels/admin-hotels.component';
 import { HotelFormComponent } from './admin/hotel-form/hotel-form.component';
 
-
 import { MatButtonModule } from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 // For MDB Angular Free
