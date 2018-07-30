@@ -12,8 +12,7 @@ export class LookupService {
   constructor(private _http:HttpClient) { }
 
   flightLookup(lookupObj){
-
-  // dikhao server
     return this._http.post(`${this.global.getServerurl()}get-specific-hotels`,lookupObj);
   }
+
 }
