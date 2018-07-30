@@ -1,5 +1,11 @@
 <div class="hotel-form-page">
+
+    <div class="backbutton">
+        <button class="btn btn-primary" routerLink="/admin-dashboard">Back</button>
+      
+        </div>
   <div class="row">
+
     <div class="col-md-6" style="margin: 50px 0px 0px 0px;">
         <form #f="ngForm" (ngSubmit)="save(f.value)">
             <!-- Hotel name-->
@@ -64,9 +70,9 @@
         </div>
     <!-- hotel card area-->
         <div class="col-md-5" style="margin: 150px 0px 0 100px;">
-
+                Hotel Details
         <div class="card" style="width: 34rem;">
-            <img class="card-img-top" [src]="imageUrl.value" style="width:200px; height:200px;">
+            <img class="card-img-top" [src]="imageUrl.value">
             <div class="card-body">
             </div>
             <ul class="list-group">
@@ -85,3 +91,4 @@
     </div>
 
   </div>
+  <app-footer></app-footer>

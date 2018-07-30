@@ -1,6 +1,7 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import 'node_modules/ngx-bootstrap/datepicker/bs-datepicker.css';
 
+@import './assets/css/dashboard.css';
 
 @import './assets/css/style.css';
 
@@ -12,6 +13,6 @@
 
 @import './assets/css/magnific-popup.css';
 
-@import './assets/css/dashboard.css';
+
 
  

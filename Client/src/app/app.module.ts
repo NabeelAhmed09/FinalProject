@@ -25,6 +25,8 @@ import { LoginComponent } from './admin/login/login.component';
 
 import { RatingModule } from 'ngx-bootstrap';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { AdminDashboardComponent } from './admin/admin-dashboard/admin-dashboard.component';
+import { BookingsComponent } from './admin/bookings/bookings.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +41,9 @@ import { DashboardComponent } from './admin/dashboard/dashboard.component';
     HotelFormComponent,
     LoginComponent,
     DashboardComponent,
+    AdminDashboardComponent,
+    BookingsComponent
+    
   ],
   imports: [
     BrowserModule,

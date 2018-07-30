@@ -1,0 +1,62 @@
+<div class="dashboard-body">
+    <div>
+      <nav class="navbar navbar-dark bg-dark" style= "padding: 7px 0px 4px 0px; font-size: 18px; color:whitesmoke;">
+          <span class="navbar-text" style="margin-left: 50px;">
+            <a routerLink="/admin-dashboard">
+          Dashboard
+          </a>    
+        </span>
+        <div ></div>
+        <span style="margin: 15px 30px 15px 0; float: right; text-align:right">
+            <a routerLink="/bh-admin">Logout</a>
+        </span>
+        <div class="avatar">
+
+          </div>
+  
+      </nav>  
+    </div>
+    <div>
+      <div style="width: 100%;">
+    <md-sidenav-container class="sidenav-container" style="width: 100%;">
+      <md-sidenav opened #sidenav class="example-sidenav" style=" width: 13%; background:rgb(52,58,64);">
+        <div class="sidenav-values">
+        <div class="side-menu"><a routerLink="/admin/admin-hotels">Hotel List</a></div>
+        <div class="side-menu"><a routerLink="/admin/hotel-form/new">Add Hotel</a></div>
+        <div class="side-menu"><a routerLink="/admin/hotel-form/new">Edit Hotel</a></div>   
+        <div class="side-menu"><a routerLink="/admin-bookings">Bookings</a></div>   
+      </div> 
+      </md-sidenav>
+    
+      <div class="example-sidenav-content" style=" width: 70%;">
+          <div class="jumbotron">
+              <h1 class="display-4">Admin Dashboard</h1>
+              <p class="lead">BookingOnline</p>
+            </div>
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Total Hotels</th>
+                    <th scope="col">Total Rooms</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+    <!-- Hotels List Code -->
+  
+        </div>  
+    
+            <!-- </div> -->
+      </md-sidenav-container>
+    </div>
+    </div>
+    
+    </div>
