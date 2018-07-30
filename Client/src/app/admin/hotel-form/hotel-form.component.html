@@ -6,7 +6,7 @@
             <div class="form-group">
               <label for="title">Hotel Name</label>
               <input #hotelName="ngModel" ngModel name="hotelName" id="title" type="text" class="form-control" required>
-              <div class="alert alert-danger" *ngIf="name.touched && name.invalid">
+              <div class="alert alert-danger" *ngIf="hotelName.touched && hotelName.invalid">
                   Title is required
               </div>
             </div>
@@ -66,11 +66,11 @@
         <div class="col-md-5" style="margin: 150px 0px 0 100px;">
 
         <div class="card" style="width: 34rem;">
-            <img class="card-img-top" [src]="imageUrl.value">
+            <img class="card-img-top" [src]="imageUrl.value" style="width:200px; height:200px;">
             <div class="card-body">
-              <h5 class="card-title">{{ title.value }} </h5>
             </div>
             <ul class="list-group">
+                <li class="list-group-item card-title" style="font-size: 16px;">{{ hotelName.value }} </li>
               <li class="list-group-item">{{country.value}}</li>
               <li class="list-group-item">{{address.value}}</li>
               <li class="list-group-item">{{cost.value | currency:'USD':true}}</li>

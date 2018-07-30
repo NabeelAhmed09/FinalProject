@@ -18,6 +18,7 @@ import { HotelFormComponent } from './admin/hotel-form/hotel-form.component';
 
 
 import { MatButtonModule } from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
 // For MDB Angular Free
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './admin/login/login.component';

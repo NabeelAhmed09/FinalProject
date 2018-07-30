@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NavbarService } from '../shared/services/navbar.service';
+// import { NavbarService } from '../shared/services/navbar.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -8,13 +9,30 @@ import { NavbarService } from '../shared/services/navbar.service';
 })
 export class NavigationComponent implements OnInit {
 
-  constructor( public nav: NavbarService) {
+// route : string = '/bh-admin';
+currentRoute : string;
+visible : boolean;
 
-   }
 
+
+constructor(private _router: Router) {
+
+  this.visible = false;  
+}
+  
   ngOnInit() {
 
-    this.nav.show();
+    // this.currentRoute = this._router.url;
+    // if(this.currentRoute === '/bh-admin') {
+    //     this.visible = false;
+    // }
+    // else {
+    //   this.visible = true;
+   
+  }
+    // console.log(this.currentRoute);
+ 
   }
 
-}
+  
+// }

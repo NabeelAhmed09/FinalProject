@@ -11,7 +11,7 @@ import { NavbarService } from '../../shared/services/Navbar.service';
 export class LoginComponent implements OnInit {
 
   alertUI = true ;
-  constructor( public nav: NavbarService, private router: Router , private _lookupService: LookupService) { }
+  constructor(private _lookupService: LookupService) { }
 
   save(userlog) {
     if( this._lookupService.credtsCheck(userlog) === true ){
@@ -23,8 +23,7 @@ export class LoginComponent implements OnInit {
     
   }
   ngOnInit() {
-    this.nav.visible = false;
-    this.nav.hide();
+
   }
 
 }
